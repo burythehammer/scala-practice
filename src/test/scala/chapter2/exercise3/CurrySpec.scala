@@ -17,7 +17,7 @@ class CurrySpec extends FunSpec with Matchers {
       def concatenateStrings(x: String, y: String): String = x.concat(y)
       val curriedFunction = Curry.curry(concatenateStrings)
       val attributeQuoteToShakespeare = curriedFunction("Shakespeare said: ")
-      attributeQuoteToShakespeare(" Hell is empty and all the devils are here") should equal ("Shakespeare said: Hell is empty and all the devils are here.")
+      attributeQuoteToShakespeare("Hell is empty and all the devils are here") should equal ("Shakespeare said: Hell is empty and all the devils are here")
     }
   }
 }
