@@ -4,7 +4,7 @@ import org.scalatest.{FunSpec, Matchers}
 
 class CurrySpec extends FunSpec with Matchers {
 
-  describe("currying method") {
+  describe("Functional currying") {
 
     it("should curry addition") {
       def addTwoNumbers(x: Int, y: Int): Int = x + y

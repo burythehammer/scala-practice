@@ -5,7 +5,7 @@ import org.scalatest.{FunSpec, Matchers}
 
 class UncurrySpec extends FunSpec with Matchers {
 
-  describe("Uncurrying method") {
+  describe("Functional uncurrying") {
 
     it("should uncurry addition") {
       def addTwoNumbers(x: Int, y: Int): Int = x + y
